@@ -1,0 +1,27 @@
+{
+  "name": "videoadmintool",
+  "version": "1.0.0",
+  "description": "cos video admin tool built with  stack",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "author": "BE",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^4.1.0",
+    "express": "^4.16.4",
+    "mongoose": "^5.5.4",
+    "netlify": "^2.4.4",
+    "netlify-cli": "^2.11.18"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.11"
+  }
+}

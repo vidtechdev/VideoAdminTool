@@ -1,0 +1,101 @@
+
+@media screen and (max-width: 381px) {
+  body {
+    font-size: 0.75rem;
+  }
+}
+
+
+
+/* ADD-NEW-VIDEOS CSS FILE  */ 
+html {
+  font-size: 1rem;
+}
+
+.text {
+  display:grid;
+  grid-template-columns: 150px auto;
+  grid-gap: 2px;
+  padding-top: 5px;
+}
+
+label {
+  display: grid;
+}
+
+input {
+  display: grid;
+}
+
+.onets {
+  display:grid;
+  grid-template-columns: 1fr;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.clusters {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(8, 1fr);
+  grid-gap: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px; 
+}
+
+.cluster {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 40px;
+  align-content:center;  
+  background-color: rgb(200, 200, 200);
+}
+
+.cluster-name {
+  padding: 10px;
+  text-align: center;
+}
+
+.selected {
+  background-color: rgb(124, 252, 0);
+  font-weight:bold;
+}
+
+#add {
+  display:grid;
+  grid-column:2fr;
+  margin-bottom:10px;
+  height: 50px;
+  background-color:rgb(124, 252, 0); 
+  font-size: 2em;
+  font-weight:bold;
+  text-align: center;
+  vertical-align: middle;
+  
+}
+
+#clear-parent {
+  display:grid;
+  grid-column:2fr;
+
+  height: 50px;
+  background-color:rgb(100, 100, 100);; /* rgb(204, 229, 255); */
+  font-size: 1em;
+  font-weight:bold;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+}
+.show-html {
+  display:grid;
+  width: 400px;
+  grid-template-columns: 1fr; 
+}
+
+#show-html {
+  grid-gap:20px;
+  grid-column:1fr;
+  margin: 20px;
+  height:30px;
+  
+}
